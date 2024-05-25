@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "6576b224533a749a",
+    "type": "split",
+    "children": [
+      {
+        "id": "49c2af3ed5682334",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4924e7ec9f92ec4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux и друзья.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3c02edad2177136d",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b6b5d9b7857256d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "505c67345ccc086d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e921c945a368d376",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4eba9743750458a5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "175dd46f22d2a786",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a50925d474e6bc3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "64cb06e96ddf1d05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a9610f37f856747",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fb1f1db07edbab1d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c68378fd377026ac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "337aedb59eb14127",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3c02edad2177136d",
+  "lastOpenFiles": [
+    "Мониторинг.md",
+    "Prom.webp",
+    "ELK.png",
+    "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png",
+    "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png.crdownload",
+    "Linux и друзья.md",
+    "k8s-cluster.png",
+    "K8s.md",
+    "Общие вопросы.md",
+    "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp",
+    "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp.crdownload",
+    "Docker.md",
+    "Сети.md"
+  ]
+}
