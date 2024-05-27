@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux и друзья.md",
+                "file": "K8s.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -23,8 +23,12 @@
             "id": "3c02edad2177136d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "K8s.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
         ],
@@ -94,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "K8s.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "K8s.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "K8s.md"
+              }
             }
           }
         ]
@@ -153,14 +161,17 @@
   },
   "active": "3c02edad2177136d",
   "lastOpenFiles": [
+    "Pasted image 20240527214236.png",
+    "K8s.md",
+    "components-of-k8s.png",
+    "components-of-k8s.png.crdownload",
     "Мониторинг.md",
+    "Linux и друзья.md",
     "Prom.webp",
     "ELK.png",
     "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png",
     "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png.crdownload",
-    "Linux и друзья.md",
     "k8s-cluster.png",
-    "K8s.md",
     "Общие вопросы.md",
     "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp",
     "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp.crdownload",
