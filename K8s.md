@@ -1,4 +1,6 @@
 ![](https://k8sdesiredstate.github.io/k8s_logo.png)
+
+---
 ## **Компоненты кластера**
 ![[components-of-k8s.png]]
 - Control plane
@@ -9,15 +11,24 @@
 			- manager
 			- Cloud-manager
 		- Etcd
-- Operator
-	- Под,поддерживает состояние системы в описанном состоянии
+- Kubelet
+- Dockerd(k3s)
+- ==Максимальное количество подов на узле : 110==
 ## **Масштабирование внутри кластера**
 - HPA 
 - VPA 
 - PBD 
 ## **Ресурсы кластера**
-- Deployment
-- StatefulSet
+---
+### **Deployment**
+- Strategy
+	- Recreate(сначала убивает старые поды, потом создает новые)
+	- Rolling update(последовательно убивает поды по 1..110/1..100% и создает новые)
+	- Хорошо подходит для приложений без необходимости поддерживать свое состояние между сессиями 
+### StatefulSet
+- Поддерживает PVC
+- В отличие от Deployment не изменяется динамически
+- Необходим для приложений ,для которых нужно сохранять состояние 
 ---
 ### **PV**
 - Пример yaml
@@ -172,11 +183,140 @@ allowVolumeExpansion: true
     - RoleBinding
     - ServiceAccount
     - Чёт ещё 
+ - Operator
+	- Под,поддерживает состояние системы в описанном состоянии
 ## **Работа с памятью и процессором в кластере**
-- REQUESTS 
-- LIMITS 
-     - И то и то для памяти и для процессора и как делится ядро 
-     - Что куда и как работает потыкать
+![[resources-requests.jpg]]
+### Примеры
+#### Контейнер
+```
+containers:
+- name: app-nginx
+  image: nginx
+  resources:
+    requests:
+      memory: 1Gi
+    limits:
+      cpu: 200m
+```
+#### Namespace
+```
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: nxs-test
+spec:
+  hard:
+    requests.cpu: 300m
+    requests.memory: 1Gi
+    limits.cpu: 700m
+    limits.memory: 2Gi
+```
+### Limits
+- Максимально возможная граница для приложения, сколько ресурсов ему можно использовать 
+- При достижении лимита убьет приложение  по ==OOM(Out of memory)== с помощью ==OOM Killer==
+- По памяти пишем в формате **512Mi** **1Gb**
+- Для CPU пишем в форматах **1** ,если нужен целый процессор, или **100m(milicpu)**,где каждый процессор поделен на *1000m*
+### Requests
+- Количество ресурсов, которые необходимы приложению для его корректной работы 
+-  По памяти пишем в формате **512m**,соответственно выделяем в мегабайтах
+- Для CPU пишем в форматах **1** ,если нужен целый процессор, или **100m(milicpu)**,где каждый процессор поделен на *1000m*
+### **LimitRange** 
+- описывает политику ограничения на уровне контейнера/пода в ns и нужна для того, чтобы описать дефолтные ограничения на контейнер/под, а также предотвращать создание заведомо жирных контейнеров/подов (или наоборот), ограничивать их количество и определять возможную разницу значений в limits и requests
+### **ResourceQuotas** 
+- описывают политику ограничения в целом по всем контейнерам в ns и используется, как правило, для разграничения ресурсов по окружениям (полезно, когда среды жестко не разграничены на уровне нод)
+### Master apiserver и лимиты
+- Не имеет данных по **requests** и **limits**
+- Есть проблема бесконечного рестарта без корректного определения лимитов==,включая master компоненты==
+### QoS(quality of service)
+- Назначется ресурсу в зависимости от его ограничений 
+- **guaranuted** — назначается тогда, как для каждого контейнера в поде для memory и cpu задан request и limit, причем эти значения должны совпадать
+- **burstable** — хотя бы один контейнер в поде имеет request и limit, при этом request < limit
+- **best effort** — когда ни один контейнер в поде не ограничен по ресурсам
+	- ==при одинаковом приоритете, kubelet в первую очередь будет выселять с ноды поды с QoS-классом best effort.==
+## Проверка работоспособности приложения (Probe)
+- Запускаются как curl через kube-probe
+### Liveness Probe
+
+- **Liveness Probe** используется для проверки, жив ли контейнер. Если liveness probe не удается, контейнер будет перезапущен.
+
+**Примеры использования:**
+
+- **HTTP liveness probe:**
+
+```yaml
+livenessProbe: 
+	httpGet: 
+		path: /healthz 
+		port: 8080 
+	initialDelaySeconds: 3 
+	periodSeconds: 3
+```
+
+- **TCP liveness probe:**
+```yaml
+livenessProbe:
+  tcpSocket:
+    port: 8080
+  initialDelaySeconds: 3
+  periodSeconds: 3
+
+```
+### Readiness Probe
+- **Readiness Probe** используется для определения готовности контейнера принимать трафик. Если readiness probe не удается, контейнер будет исключен из балансировщика нагрузки.
+
+**Примеры использования:**
+
+- **HTTP readiness probe:**
+
+```yaml
+readinessProbe:
+  httpGet:
+    path: /ready
+    port: 8080
+  initialDelaySeconds: 3
+  periodSeconds: 3
+```
+
+- **TCP readiness probe:**
+
+```yaml
+readinessProbe:
+  tcpSocket:
+    port: 8080
+  initialDelaySeconds: 3
+  periodSeconds: 3
+```
+
+### Startup Probe
+
+- **Startup Probe** используется для проверки старта контейнера. Если startup probe не удается, Kubernetes будет считать контейнер неуспешно запущенным и перезапустит его. Использование startup probe может помочь предотвратить перезапуски контейнеров, которые имеют длительное время запуска.
+
+**Примеры использования:**
+
+- **HTTP startup probe:**
+
+
+```yaml
+startupProbe:
+  httpGet:
+    path: /start
+    port: 8080
+  initialDelaySeconds: 3
+  periodSeconds: 3
+  failureThreshold: 30
+```
+
+- **TCP startup probe:**
+
+```
+startupProbe:
+  tcpSocket:
+    port: 8080
+  initialDelaySeconds: 3
+  periodSeconds: 3
+  failureThreshold: 30
+```
 ## **На почитать**
 - ЕБАНЫЙ. Vault
 	-  Vault bank ,bank checker

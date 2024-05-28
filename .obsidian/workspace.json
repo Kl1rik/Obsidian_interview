@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "K8s.md",
-                "mode": "preview",
-                "source": true
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -23,8 +23,12 @@
             "id": "00c510892aa05b74",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -156,15 +160,16 @@
   },
   "active": "3c02edad2177136d",
   "lastOpenFiles": [
-    "Pasted image 20240528093934.png",
-    "kubectl-cheat-sheet.png",
+    "README.md",
     "K8s.md",
+    "Мониторинг.md",
+    "resources-requests.jpg",
+    "Linux и друзья.md",
+    "kubectl-cheat-sheet.png",
+    "Pasted image 20240528093934.png",
     "kubectl-cheat-sheet.jpg",
     "Pasted image 20240528093619.png",
     "Untitled.canvas",
-    "Мониторинг.md",
-    "README.md",
-    "Linux и друзья.md",
     "k8s-cluster.png",
     "Prom.webp",
     "Общие вопросы.md",
@@ -172,9 +177,7 @@
     "components-of-k8s.png",
     "components-of-k8s.png.crdownload",
     "ELK.png",
-    "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png",
     "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png.crdownload",
-    "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp",
     "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp.crdownload",
     "Docker.md",
     "Сети.md"
