@@ -309,7 +309,7 @@ startupProbe:
 
 - **TCP startup probe:**
 
-```
+```yaml
 startupProbe:
   tcpSocket:
     port: 8080
