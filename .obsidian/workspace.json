@@ -23,8 +23,12 @@
             "id": "00c510892aa05b74",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Linux и друзья.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -94,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux и друзья.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linux и друзья.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linux и друзья.md"
+              }
             }
           }
         ]
@@ -153,8 +161,9 @@
   },
   "active": "00c510892aa05b74",
   "lastOpenFiles": [
-    "Linux и друзья.md",
     "K8s.md",
+    "k8s-cluster.png",
+    "Linux и друзья.md",
     "Сети.md",
     "Docker.md",
     "README.md",
@@ -165,7 +174,6 @@
     "kubectl-cheat-sheet.jpg",
     "Pasted image 20240528093619.png",
     "Untitled.canvas",
-    "k8s-cluster.png",
     "Prom.webp",
     "Общие вопросы.md",
     "Pasted image 20240527214236.png",
