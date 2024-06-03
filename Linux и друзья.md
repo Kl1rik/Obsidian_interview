@@ -1,4 +1,4 @@
-![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bestsevenreviews.com%2Fwp-content%2Fuploads%2F2018%2F12%2Flogo-distros-for-linux.jpg&f=1&nofb=1&ipt=d1b89a5f579f0a2c47784ea5a28d3276a3faca6483132bbbd1f38a903196b0a6&ipo=images)
+![[distro-linux-icon-min.png]]
 ## **Отличия дистрибутивов и какие юзал**
 - Debian
 - Fedora
