@@ -1,4 +1,5 @@
 - Запускаются как curl через kube-probe
+#k8s
 ### Liveness Probe
 
 - **Liveness Probe** используется для проверки, жив ли контейнер. Если liveness probe не удается, контейнер будет перезапущен.

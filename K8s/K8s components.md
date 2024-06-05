@@ -1,3 +1,4 @@
+#k8s
 ### Control plane
 #### Kube-scheduler
 - ==Назначает PODы на нужные ноды==

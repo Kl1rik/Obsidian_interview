@@ -1,3 +1,4 @@
+#Linux
 ![[distro-linux-icon-min.png]]
 ## **Отличия дистрибутивов и какие юзал**
 - Debian
