@@ -8,27 +8,26 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9aea66b9b42f7214",
+            "id": "614f97f7782ad8f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8s/K8s.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "043acc76badb6c91",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
-          },
-          {
-            "id": "824a0bad9fcdeeab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -57,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#main",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -95,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "K8s/K8s.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "K8s/K8s.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "K8s/K8s.md"
               }
             }
           }
@@ -144,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,35 +158,38 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "824a0bad9fcdeeab",
+  "active": "614f97f7782ad8f5",
   "lastOpenFiles": [
-    "Общие вопросы.md",
-    "Сети.md",
-    "Linux и друзья.md",
-    "Docker.md",
-    "Мониторинг.md",
-    "K8s/K8s components.md",
+    "K8s configmap & Secret.md",
     "K8s/K8s.md",
+    "media/pod-pattern-sidecar.png",
+    "media/Prom.webp",
+    "media/pod-pattern-init.png",
+    "media/Pasted image 20240610191340.png",
+    "Vault.md",
+    "Мониторинг.md",
+    "media/Pasted image 20240610192818.png",
+    "media/Pod-pattern.png",
+    "Общие вопросы.md",
+    "media/gcp-schema.png",
+    "media/Pasted image 20240610192921.png",
+    "Docker.md",
+    "media/Pasted image 20240610191440.png",
+    "K8s/K8s components.md",
+    "media/vault.png",
+    "Linux и друзья.md",
+    "README.md",
+    "media/vault.png.crdownload",
+    "Сети.md",
     "K8s/K8s probe.md",
     "K8s/K8s PV-PVC.md",
     "K8s/K8s mem cpu  managment.md",
     "2024-06-05.md",
-    "media/resources-requests.jpg",
-    "media/kubectl-cheat-sheet.png",
-    "media/k8s-cluster.png",
     "Untitled.canvas",
-    "media/k8s-hpa.png",
     "media/etcd.canvas",
-    "media/distro-linux-icon-min.png",
-    "media/components-of-k8s.png",
-    "media/k8s-vpa.png",
     "K8s",
     "media",
-    "media/ELK.png",
     "distro-linux-icon-min.png.crdownload",
-    "README.md",
-    "Pasted image 20240528093934.png",
-    "kubectl-cheat-sheet.jpg",
     "components-of-k8s.png.crdownload",
     "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png.crdownload",
     "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp.crdownload"
