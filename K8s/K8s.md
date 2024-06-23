@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/m0r0ti99#uAlviHotPHNqXaPWvGmou3luocEOJZm4Jn2Wa59kkRY
+share_updated: 2024-06-23T16:29:04+03:00
+---
 ![](https://k8sdesiredstate.github.io/k8s_logo.png)
 #k8s
 ---
@@ -111,9 +115,47 @@ spec:
 [[K8s configmap & Secret]]
 - Vault
 ### Rbac
-- RoleBinding
-- ServiceAccount
-- Чёт ещё 
+![[Pasted image 20240615143223.png]]
+#### Role
+- Список в YAML манифесте ,**описывающий ,но не назначающий права на объекты в кластере**
+##### Subjects
+- пользователи(группы пользователей )
+```yaml
+kind: Role  
+apiVersion: rbac.authorization.k8s.io/v1  
+metadata:  
+namespace: mynamespace  
+name: example-role  
+rules:  
+- apiGroups: [""]  
+resources: ["pods"]  
+verbs: ["get", "watch", "list"]
+
+```
+#### RoleBinding
+
+>  definition of what Subjects have which Roles
+
+- Связывает **Role** и **ServiceAccount** в **определенном** **namespace**
+```yaml
+kind: RoleBinding  
+apiVersion: rbac.authorization.k8s.io/v1  
+metadata:  
+name: example-rolebinding  
+namespace: mynamespace  
+subjects:  
+- kind: User  
+name: example-user  
+apiGroup: rbac.authorization.k8s.io  
+roleRef:  
+kind: Role  
+name: example-role  
+apiGroup: rbac.authorization.k8s.io
+```
+#### ClusterRole
+
+#### ClusterRoleBinding
+#### ServiceAccount
 
 ### Operator
 	- Под,поддерживает состояние системы в описанном состоянии
@@ -153,4 +195,8 @@ spec:
 - Одуплиться с GO
 - Network Policy
 - Как ноды куба взаимодейтствуют друг с другом
-	
+### Плейлисты 
+#### Слёрм академия
+https://www.youtube.com/live/Jp866ltZBSk?si=GgNxosjzXamq5Jqi
+#### ADV-IT
+https://www.youtube.com/watch?v=q_nj340pkQo&list=PLg5SS_4L6LYvN1RqaVesof8KAf-02fJSi&pp=iAQB
