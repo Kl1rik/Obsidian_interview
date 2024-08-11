@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "cde0b28461800466",
+        "id": "6a1c3e4f3e46e8a3",
         "type": "tabs",
         "children": [
           {
-            "id": "a19b83887b533e2f",
+            "id": "78dcadf11777cf4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Linux и друзья.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -158,35 +158,37 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "a19b83887b533e2f",
+  "active": "78dcadf11777cf4e",
   "lastOpenFiles": [
     "K8s/K8s.md",
     "Linux и друзья.md",
-    "K8s/K8s PV-PVC.md",
     "K8s/K8s components.md",
+    "K8s/K8s probe.md",
     "K8s/K8s mem cpu  managment.md",
     "K8s/K8s configmap & Secret.md",
-    "K8s/K8s probe.md",
-    "Общие вопросы.md",
-    "Сети.md",
+    "K8s/K8s PV-PVC.md",
     "Docker.md",
+    "Vault.md",
+    "ru.ntp.pool.org.md",
+    "Сети.md",
+    "Общие вопросы.md",
     "Мониторинг.md",
+    "media/etcd.canvas",
+    "media/test_vsphere_schema.jpg",
+    "media/vsphere.jpg",
+    "media/ntp.png",
+    "time.cloudflare.com.md",
     "README.md",
     "media/Pasted image 20240615143223.png",
     "media/pod-pattern-sidecar.png",
     "media/Prom.webp",
     "media/pod-pattern-init.png",
     "media/Pasted image 20240610191340.png",
-    "Vault.md",
     "media/Pasted image 20240610192818.png",
     "media/Pod-pattern.png",
-    "media/gcp-schema.png",
-    "media/Pasted image 20240610192921.png",
-    "media/Pasted image 20240610191440.png",
     "media/vault.png.crdownload",
     "2024-06-05.md",
     "Untitled.canvas",
-    "media/etcd.canvas",
     "K8s",
     "media",
     "distro-linux-icon-min.png.crdownload",
