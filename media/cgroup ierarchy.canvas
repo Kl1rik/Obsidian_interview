@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "10597f4ed9e6c78b",
+      "type": "text",
+      "text": "## mem cgroup\n\t/sys/fs/cgroup/memory",
+      "x": -340,
+      "y": -20,
+      "width": 260,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "96c2eb22523b30a4",
+      "type": "text",
+      "text": "## cpu cgroup\n\t/sys/fs/cgroup/cpu",
+      "x": 60,
+      "y": -20,
+      "width": 260,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "22a451dd7d141793",
+      "type": "text",
+      "text": "### mem1 cgroup\n\t/sys/fs/cgroup/memory/my_cgroup_memory1",
+      "x": -540,
+      "y": 240,
+      "width": 260,
+      "height": 140,
+      "color": "5"
+    },
+    {
+      "id": "1173b21b321d0994",
+      "type": "text",
+      "text": "## user cgroup \n\t/sys/fs/cgroup/user_cgroup",
+      "x": -740,
+      "y": -20,
+      "width": 260,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "437fc12d93a91214",
+      "type": "text",
+      "text": "# root cgroup \n\t/sys/fs/cgroup",
+      "x": -340,
+      "y": -260,
+      "width": 260,
+      "height": 100,
+      "color": "4"
+    },
+    {
+      "id": "556664cf7317a59e",
+      "type": "text",
+      "text": "### mem2 cgroup\n\t/sys/fs/cgroup/memory/my_cgroup_memory2",
+      "x": -140,
+      "y": 240,
+      "width": 260,
+      "height": 140,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "410efcc5a0b52fd8",
+      "fromNode": "10597f4ed9e6c78b",
+      "fromSide": "bottom",
+      "toNode": "22a451dd7d141793",
+      "toSide": "top"
+    },
+    {
+      "id": "da81f4311107744b",
+      "fromNode": "10597f4ed9e6c78b",
+      "fromSide": "bottom",
+      "toNode": "556664cf7317a59e",
+      "toSide": "top"
+    },
+    {
+      "id": "5d933373e971c098",
+      "fromNode": "437fc12d93a91214",
+      "fromSide": "bottom",
+      "toNode": "1173b21b321d0994",
+      "toSide": "top"
+    },
+    {
+      "id": "0f389a3c6d3eb8ad",
+      "fromNode": "437fc12d93a91214",
+      "fromSide": "bottom",
+      "toNode": "10597f4ed9e6c78b",
+      "toSide": "top"
+    },
+    {
+      "id": "58d506bdba7ec673",
+      "fromNode": "437fc12d93a91214",
+      "fromSide": "bottom",
+      "toNode": "96c2eb22523b30a4",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {}
+}

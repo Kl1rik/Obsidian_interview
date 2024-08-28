@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "6a1c3e4f3e46e8a3",
+        "id": "511a59a507fcc71d",
         "type": "tabs",
         "children": [
           {
-            "id": "78dcadf11777cf4e",
+            "id": "cd310da36c86afb5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux и друзья.md",
+                "file": "ntp.pool.org.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -31,6 +31,7 @@
       {
         "id": "505c67345ccc086d",
         "type": "tabs",
+        "dimension": 58.416833667334664,
         "children": [
           {
             "id": "e921c945a368d376",
@@ -66,6 +67,21 @@
             }
           }
         ]
+      },
+      {
+        "id": "caa9aa459461d1dc",
+        "type": "tabs",
+        "dimension": 41.583166332665336,
+        "children": [
+          {
+            "id": "a1889c9d758bc1bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -85,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux и друзья.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux и друзья.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +138,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux и друзья.md"
-              }
+              "state": {}
             }
           },
           {
@@ -158,37 +170,41 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "78dcadf11777cf4e",
+  "active": "a1889c9d758bc1bf",
   "lastOpenFiles": [
-    "K8s/K8s.md",
-    "Linux и друзья.md",
+    "ntp.pool.org.md",
+    "media/ntp_pool.png",
+    "Docker.md",
+    "Linux/Linux команды.md",
+    "Linux/Linux файловая система.md",
+    "Linux/Linux cgroups.md",
+    "media/cgroup ierarchy.canvas",
     "K8s/K8s components.md",
+    "media/etcd.canvas",
+    "README.md",
+    "Сети.md",
+    "K8s/K8s.md",
+    "K8s/K8s PV-PVC.md",
     "K8s/K8s probe.md",
     "K8s/K8s mem cpu  managment.md",
     "K8s/K8s configmap & Secret.md",
-    "K8s/K8s PV-PVC.md",
-    "Docker.md",
-    "Vault.md",
-    "ru.ntp.pool.org.md",
-    "Сети.md",
+    "media/Pasted image 20240828124949.png",
+    "Linux/Linux и друзья.md",
     "Общие вопросы.md",
+    "media/Pasted image 20240828130148.png",
+    "Linux",
+    "Vault.md",
+    "media/Pasted image 20240610191340.png",
+    "media/Pasted image 20240610192818.png",
+    "media/linux_namespaces.png",
     "Мониторинг.md",
-    "media/etcd.canvas",
     "media/test_vsphere_schema.jpg",
     "media/vsphere.jpg",
     "media/ntp.png",
     "time.cloudflare.com.md",
-    "README.md",
     "media/Pasted image 20240615143223.png",
-    "media/pod-pattern-sidecar.png",
-    "media/Prom.webp",
-    "media/pod-pattern-init.png",
-    "media/Pasted image 20240610191340.png",
-    "media/Pasted image 20240610192818.png",
-    "media/Pod-pattern.png",
     "media/vault.png.crdownload",
     "2024-06-05.md",
-    "Untitled.canvas",
     "K8s",
     "media",
     "distro-linux-icon-min.png.crdownload",

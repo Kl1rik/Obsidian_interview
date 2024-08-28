@@ -13,7 +13,7 @@
 - Работает с Node/Replication/Endpoints/Daemonset/... controller 			
 - Работает с GarbageCollector
 #### Etcd
-- [[etcd.canvas|etcd]]
+ ![[etcd.canvas|etcd]]
 - ==Хранилище кластера==
 - Хранятся все секреты, манифесты и т.д.
 - управляется etcdctl
