@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ntp.pool.org.md",
+                "file": "Docker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bcaabded1f9363b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker namespace.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,6 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,6 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +152,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Docker.md"
+              }
             }
           },
           {
@@ -149,8 +165,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -159,6 +174,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "remotely-save:Remotely Save": false,
       "omnisearch:Omnisearch": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -170,46 +186,56 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "a1889c9d758bc1bf",
+  "active": "cd310da36c86afb5",
   "lastOpenFiles": [
-    "ntp.pool.org.md",
-    "media/ntp_pool.png",
+    "Linux/Linux и друзья.md",
     "Docker.md",
-    "Linux/Linux команды.md",
-    "Linux/Linux файловая система.md",
+    "Docker namespace.md",
+    "media/canvas/etcd.canvas",
     "Linux/Linux cgroups.md",
-    "media/cgroup ierarchy.canvas",
+    "Linux и друзья 1.md",
+    "Linux/Linux файловая система.md",
+    "Linux/Linux команды.md",
     "K8s/K8s components.md",
-    "media/etcd.canvas",
-    "README.md",
-    "Сети.md",
     "K8s/K8s.md",
+    "ntp.pool.org.md",
+    "Общие вопросы.md",
+    "Мониторинг.md",
+    "Вопросы.md",
+    "README.md",
+    "Счётчики.md",
+    "ru.ntp.pool.org.md",
+    "Сети.md",
+    "Linux/Linux и друзья 1.md",
+    "media/canvas/cgroup ierarchy.canvas",
+    "media/logo/custom_obsi_logo.png",
+    "media/etcd.canvas",
+    "media/cgroup ierarchy.canvas",
+    "media/canvas",
+    "media/Новая папка",
+    "media/logo",
+    "media/custom_obsi_logo.png",
+    "media/custom_ovsi_logo.png",
+    "media/custom_ovsi_logo.png.crdownload",
+    "media/ntp_pool.png",
     "K8s/K8s PV-PVC.md",
     "K8s/K8s probe.md",
     "K8s/K8s mem cpu  managment.md",
     "K8s/K8s configmap & Secret.md",
     "media/Pasted image 20240828124949.png",
-    "Linux/Linux и друзья.md",
-    "Общие вопросы.md",
     "media/Pasted image 20240828130148.png",
     "Linux",
     "Vault.md",
     "media/Pasted image 20240610191340.png",
     "media/Pasted image 20240610192818.png",
     "media/linux_namespaces.png",
-    "Мониторинг.md",
     "media/test_vsphere_schema.jpg",
-    "media/vsphere.jpg",
-    "media/ntp.png",
     "time.cloudflare.com.md",
-    "media/Pasted image 20240615143223.png",
     "media/vault.png.crdownload",
     "2024-06-05.md",
     "K8s",
     "media",
     "distro-linux-icon-min.png.crdownload",
-    "components-of-k8s.png.crdownload",
-    "f8a97882-7d4d-4d02-82b0-b8ba0c964225.png.crdownload",
-    "befdd93d-37a4-4a2e-ad45-d73de02f0ba3.webp.crdownload"
+    "components-of-k8s.png.crdownload"
   ]
 }

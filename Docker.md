@@ -4,10 +4,21 @@
 - Windows
 	- Hyper v
 	- WSL
-### Docker Enterprise(Linux)
-- **Архитектура**
-- **Синтаксис Docker файлов**
+
+## Архитектура
+### Docker namespace 
+[[Docker namespace]]
+[[Linux и друзья]]
+### Docker cgroup
+[[Linux cgroups]]
+### Манифесты(Dockerfile/Compose)
 	- Dockerfile
 	- Docker-compose.yaml
-	- .dockerignore
+### Cборка
+- `.dockerignore`
+- Multi-stage сборка
 ### Dockerd(k3s/Linux)
+### Аналоги
+- Podman
+- Rancher
+- LXC
