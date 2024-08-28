@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bcaabded1f9363b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker namespace.md",
+                "file": "Docker/Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +117,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,9 +138,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Docker.md"
-              }
+              "state": {}
             }
           },
           {
@@ -186,18 +170,22 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "cd310da36c86afb5",
+  "active": "a1889c9d758bc1bf",
   "lastOpenFiles": [
+    "Docker/Docker.md",
+    "Docker/Docker dockerfile instructions.md",
+    "media/docker_layers.png",
+    "Pasted image 20240828212723.png",
+    "Docker/Docker namespace.md",
+    "Docker",
+    "K8s/K8s.md",
     "Linux/Linux и друзья.md",
-    "Docker.md",
-    "Docker namespace.md",
     "media/canvas/etcd.canvas",
     "Linux/Linux cgroups.md",
     "Linux и друзья 1.md",
     "Linux/Linux файловая система.md",
     "Linux/Linux команды.md",
     "K8s/K8s components.md",
-    "K8s/K8s.md",
     "ntp.pool.org.md",
     "Общие вопросы.md",
     "Мониторинг.md",
@@ -228,14 +216,10 @@
     "Vault.md",
     "media/Pasted image 20240610191340.png",
     "media/Pasted image 20240610192818.png",
-    "media/linux_namespaces.png",
-    "media/test_vsphere_schema.jpg",
     "time.cloudflare.com.md",
     "media/vault.png.crdownload",
-    "2024-06-05.md",
     "K8s",
     "media",
-    "distro-linux-icon-min.png.crdownload",
-    "components-of-k8s.png.crdownload"
+    "distro-linux-icon-min.png.crdownload"
   ]
 }
